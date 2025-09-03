@@ -3,157 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HELLO WORLD</title>
+    <title>HELLO WORLD - Newspaper / Magazine / Publisher</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="top-bar">
-            <div class="menu">≡ MORE</div>
-            <div class="date">○ Friday, 5 January 2023</div>
+    <!-- barra superior -->
+    <div class="topbar">
+        <div class="more-link">
+            <a href="#">MORE</a>
         </div>
-        <h1 class="title">HELLO WORLD</h1>
-        <p class="subtitle">~ NEWSPAPER / MAGAZINE / PUBLISHER ~</p>
-        <nav class="nav">
-            <a href="#">HOME</a>
-            <a href="#">LAYOUT</a>
-            <a href="#">NEWS</a>
-            <a href="#">ECONOMY</a>
-            <a href="#">ENTERTAINMENT</a>
-            <a href="#">JOBS</a>
-        </nav>
-        <div class="icons">
-            <span class="share">🔗</span>
-            <span>?</span>
-            <span class="search">Q</span>
+        <div class="date">
+            Friday, 5 January 2023
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">HELLO WORLD</h1>
+            <p class="site-subtitle">~~ NEWSPAPER / MAGAZINE / PUBLISHER ~~</p>
+            
+            <!-- navegacion -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">HOME</a></li>
+                    <li><a href="#" class="nav-link">LAYOUT</a></li>
+                    <li><a href="#" class="nav-link">NEWS</a></li>
+                    <li><a href="#" class="nav-link">ECONOMY</a></li>
+                    <li><a href="#" class="nav-link">ENTERTAINMENT</a></li>
+                    <li><a href="#" class="nav-link">JOBS</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="main-content">
-        <section class="featured-news">
-            <img src="./imgs/viejo.png" alt="Featured News Image">
-            <h2>Lorem ipsum dolor sit ut mollis primis eros torquent</h2>
-            <p class="author">Steven Job - 15 SEP 2023</p>
-        </section>
+    <!-- contenido principal -->
+    <main class="container main-content">
+        <!-- columna izquierda -->
+        <div class="content-left">
+            <!-- post destacado -->
+            <article class="featured-post">
+                <div class="featured-image-container">
+                    <img src="https://picsum.photos/600/400?random=1" alt="Featured Post" class="featured-image">
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="post-author">By John Smith</span> • 
+                        <span class="post-date">January 5, 2023</span>
+                    </div>
+                    <h2 class="post-title">Global Economic Forum Announces New Initiatives for Sustainable Development</h2>
+                    <p class="post-excerpt">
+                        World leaders gathered in Davos to discuss new measures for promoting sustainable economic growth while addressing climate change concerns. The new initiatives focus on...
+                    </p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
 
-        <section class="news-grid">
-            <div class="news-item">
-                <img src="./imgs/1.png" alt="News Image">
-                <h3>Ut enim ad minim veniam</h3>
-                <p class="author">Steven Job - 15 SEP 2023</p>
-            </div>
-            <div class="news-item">
-                <img src="./imgs/2.png" alt="News Image">
-                <h3>Quis autem vel eum</h3>
-                <p class="author">Steven Job - 15 SEP 2023</p>
-            </div>
-            <div class="news-item">
-                <img src="./imgs/3.png" alt="News Image">
-                <h3>At vero eos et accusam</h3>
-                <p class="author">Steven Job - 15 SEP 2023</p>
-            </div>
-        </section>
+            <!-- posts recientes -->
+            <section class="recent-section">
+                <h2 class="section-title">Recent Posts</h2>
+                <div class="recent-posts">
+                    <!-- 1 -->
+                    <article class="post-card">
+                        <img src="https://picsum.photos/300/200?random=2" alt="Recent Post 1" class="post-thumbnail">
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">Tech Giants Announce New AI Partnership</h3>
+                            <div class="post-card-date">January 4, 2023</div>
+                        </div>
+                    </article>
 
-        <section class="recent-posts">
-            <h2>~~~ RECENT POSTS ~~~</h2>
-            <div class="posts-grid">
-                <div class="post-item">
-                    <img src="placeholder5.jpg" alt="Post Image">
-                    <h3>Magna aliqua ut enim ad minim veniam</h3>
-                    <p class="date">15 SEP 2023</p>
-                </div>
-                <div class="post-item">
-                    <img src="placeholder6.jpg" alt="Post Image">
-                    <h3>Letraset sheets containing Lorem Ipsum passages</h3>
-                    <p class="date">15 SEP 2023</p>
-                </div>
-                <div class="post-item">
-                    <img src="placeholder7.jpg" alt="Post Image">
-                    <h3>There are many variations of passages of Lorem Ipsum</h3>
-                    <p class="date">15 SEP 2023</p>
-                </div>
-                <div class="post-item">
-                    <img src="placeholder8.jpg" alt="Post Image">
-                    <h3>It uses a dictionary of over 200 Latin words</h3>
-                    <p class="date">15 SEP 2023</p>
-                </div>
-                <div class="post-item">
-                    <img src="placeholder9.jpg" alt="Post Image">
-                    <h3>Reading is not only informed by what's going on with us</h3>
-                    <p class="date">15 SEP 2023</p>
-                </div>
-                <div class="post-item">
-                    <img src="placeholder10.jpg" alt="Post Image">
-                    <h3>What you see and what you're experiencing as you read</h3>
-                    <p class="date">15 SEP 2023</p>
-                </div>
-            </div>
-        </section>
+                    <!-- 2 -->
+                    <article class="post-card">
+                        <img src="https://picsum.photos/300/200?random=3" alt="Recent Post 2" class="post-thumbnail">
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">Market Trends: What to Expect in 2023</h3>
+                            <div class="post-card-date">January 3, 2023</div>
+                        </div>
+                    </article>
 
+                    <!-- 3 -->
+                    <article class="post-card">
+                        <img src="https://picsum.photos/300/200?random=4" alt="Recent Post 3" class="post-thumbnail">
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">New Film Festival Breaks Attendance Records</h3>
+                            <div class="post-card-date">January 2, 2023</div>
+                        </div>
+                    </article>
+
+                    <!-- 4 -->
+                    <article class="post-card">
+                        <img src="https://picsum.photos/300/200?random=5" alt="Recent Post 4" class="post-thumbnail">
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">Sports League Announces Expansion Teams</h3>
+                            <div class="post-card-date">January 1, 2023</div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- barra lateral -->
         <aside class="sidebar">
-            <div class="trending">
-                <h3>★ TRENDING ★</h3>
-                <img src="placeholder11.jpg" alt="Trending Image">
-                <p>Nor is there anyone who loves or pursues or desires to obtain</p>
+            <!-- busqueda -->
+            <div class="widget">
+                <h2 class="section-title">SEARCH</h2>
+                <form class="search-form">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
             </div>
-            <div class="categories">
-                <h3>CATEGORIES</h3>
-                <ul>
-                    <li>Lifestyle</li>
-                    <li>Technology</li>
-                    <li>Sport</li>
-                    <li>Photography</li>
-                    <li>Art</li>
+
+            <!-- popular -->
+            <div class="widget">
+                <h2 class="section-title">Popular Articles</h2>
+                <ol class="popular-list">
+                    <li class="popular-item"><a href="#">How Technology is Changing the Job Market</a></li>
+                    <li class="popular-item"><a href="#">The Future of Renewable Energy Sources</a></li>
+                    <li class="popular-item"><a href="#">Investment Strategies for Uncertain Times</a></li>
+                    <li class="popular-item"><a href="#">Climate Change: New Research Findings</a></li>
+                    <li class="popular-item"><a href="#">The Rise of Digital Currencies</a></li>
+                </ol>
+            </div>
+
+            <!-- los trendings -->
+            <div class="widget">
+                <h2 class="section-title">Trending</h2>
+                <ul class="trending-list">
+                    <li class="trending-item"><a href="#">#SustainableDevelopment</a></li>
+                    <li class="trending-item"><a href="#">#AIInnovation</a></li>
+                    <li class="trending-item"><a href="#">#EconomicForecast</a></li>
+                    <li class="trending-item"><a href="#">#ClimateAction</a></li>
+                    <li class="trending-item"><a href="#">#DigitalTransformation</a></li>
                 </ul>
             </div>
-            <div class="tags">
-                <h3>★ TAGS CLOUD ★</h3>
-                <ul>
-                    <li>Business</li>
-                    <li>Technology</li>
-                    <li>Sport</li>
-                    <li>Photography</li>
-                    <li>Art</li>
-                    <li>Lifestyle</li>
-                    <li>Three</li>
-                </ul>
-            </div>
-            <div class="instagram">
-                <h3>★ INSTAGRAM ★</h3>
-                <div class="instagram-grid">
-                    <img src="placeholder12.jpg" alt="Instagram Image">
-                    <img src="placeholder13.jpg" alt="Instagram Image">
-                    <img src="placeholder14.jpg" alt="Instagram Image">
-                    <img src="placeholder15.jpg" alt="Instagram Image">
+
+            <!-- tags -->
+            <div class="widget">
+                <h2 class="section-title">Tags Cloud</h2>
+                <div class="tags-cloud">
+                    <a href="#" class="tag">Business</a>
+                    <a href="#" class="tag">Technology</a>
+                    <a href="#" class="tag">Sport</a>
+                    <a href="#" class="tag">Politics</a>
+                    <a href="#" class="tag">Entertainment</a>
+                    <a href="#" class="tag">Science</a>
+                    <a href="#" class="tag">Health</a>
+                    <a href="#" class="tag">Education</a>
+                    <a href="#" class="tag">Culture</a>
+                    <a href="#" class="tag">Environment</a>
                 </div>
             </div>
         </aside>
-
-        <section class="most-commented">
-            <h2>★ MOST COMMENTED ★</h2>
-            <ol>
-                <li>Frustrated splinters unlike each</li>
-                <li>Against and lantern where a sand</li>
-                <li>Grashed nefarious</li>
-                <li>And by much hello and bashful</li>
-            </ol>
-        </section>
-
-        <section class="latest">
-            <h2>LATEST</h2>
-            <div class="latest-grid">
-                <img src="placeholder16.jpg" alt="Latest Image">
-                <img src="placeholder17.jpg" alt="Latest Image">
-            </div>
-        </section>
     </main>
 
-    <footer class="footer">
-        <h2>HELLO WORLD</h2>
-        <div class="social">
-            <span>~</span> <span>f</span> <span>🐦</span> <span>G+</span> <span>~</span>
+    <!-- coso de ig -->
+    <section class="container">
+        <h2 class="section-title">Instagram Feed</h2>
+        <div class="instagram-feed">
+            <img src="https://picsum.photos/300/300?random=6" alt="Instagram post" class="instagram-item">
+            <img src="https://picsum.photos/300/300?random=7" alt="Instagram post" class="instagram-item">
+            <img src="https://picsum.photos/300/300?random=8" alt="Instagram post" class="instagram-item">
+            <img src="https://picsum.photos/300/300?random=9" alt="Instagram post" class="instagram-item">
+            <img src="https://picsum.photos/300/300?random=10" alt="Instagram post" class="instagram-item">
+            <img src="https://picsum.photos/300/300?random=11" alt="Instagram post" class="instagram-item">
+            <img src="https://picsum.photos/300/300?random=12" alt="Instagram post" class="instagram-item">
+            <img src="https://picsum.photos/300/300?random=13" alt="Instagram post" class="instagram-item">
         </div>
-        <p>© Copyright 2023, All rights reserved. Design by Alithemes</p>
+    </section>
+
+    <!-- pie de pagina -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-widget">
+                    <h3 class="footer-title">About Us</h3>
+                    <p>HELLO WORLD is a leading publisher of news, analysis and commentary on global affairs, business, culture and technology.</p>
+                </div>
+                
+                <div class="footer-widget">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">Advertise</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-widget">
+                    <h3 class="footer-title">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                        <li><a href="#" class="footer-link">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-widget">
+                    <h3 class="footer-title">Connect With Us</h3>
+                    <p>Follow us on social media for the latest updates and news.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© Copyright 2023, All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
